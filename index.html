@@ -25,43 +25,59 @@
         <p>Veja trailers, novos filmes e eventos online!</p>
     </header>
 
-    <!-- Iframes -->
-    <section class="videos-section">
+
+    <section class="capa-section">
         <h3>Teasers em Destaque</h3>
 
-        <div class="videos-grid">
+        <div class="capa-grid">
 
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/CwXOrWvPBPk" title="Trailer 1" frameborder="0"
-                    allowfullscreen></iframe>
-                <p>Shrek - Trailer Oficial</p>
+            <div class="capa filme" data-titulo="Shrek"
+                data-sinopse="Um ogro solitário embarca numa aventura para resgatar uma princesa e acaba por descobrir o verdadeiro significado da amizade."
+                data-extra="Filme de animação lançado em 2001, vencedor do Óscar de Melhor Filme de Animação.">
+                <img src="./Data/Shrek.png" alt="Shrek">
+                <p>Shrek</p>
             </div>
 
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/5PSNL1qE6VY" title="Trailer 2" frameborder="0"
-                    allowfullscreen></iframe>
-                <p>Avatar - Trailer Oficial</p>
+            <div class="capa filme" data-titulo="Avatar"
+                data-sinopse="Um ex-fuzileiro naval é enviado para Pandora, onde acaba por se envolver num conflito entre humanos e os habitantes locais."
+                data-extra="Avatar foi realizado por James Cameron e revolucionou o cinema 3D.">
+                <img src="./Data/Avatar.png" alt="Avatar">
+                <p>Avatar</p>
             </div>
 
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/s2-1hz1juBI" title="Trailer 3" frameborder="0"
-                    allowfullscreen></iframe>
-                <p>O Herói de Hacksaw Ridge - Trailer Oficial</p>
+            <div class="capa filme" data-titulo="O Herói de Hacksaw Ridge"
+                data-sinopse="A história real de um médico de combate que salvou dezenas de soldados sem usar armas."
+                data-extra="Filme baseado em factos reais, realizado por Mel Gibson.">
+                <img src="./Data/O Herói de Hacksaw Ridge.png" alt="">
+                <p>O Herói de Hacksaw Ridge</p>
             </div>
 
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/RPJ4EQ2Eh9I" title="Trailer 4" frameborder="0"
-                    allowfullscreen></iframe>
-                <p>Spirit: O Corcel Indomável - Trailer Oficial</p>
+            <div class="capa filme" data-titulo="Spirit: O Corcel Indomável"
+                data-sinopse="Um cavalo selvagem luta pela sua liberdade e cria uma ligação especial com um jovem índio."
+                data-extra="Filme de animação da DreamWorks lançado em 2002.">
+                <img src="./Data/sPIRIT.png" alt="">
+                <p>Spirit: O Corcel Indomável</p>
             </div>
 
         </div>
     </section>
 
 
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="fechar">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-sinopse"></p>
+            <p id="modal-extra"></p>
+        </div>
+    </div>
+
+
     <footer>
         <p>© 2025 Catálogo de Cinema - Projeto de OPM - Instituto das Artes e Imagem</p>
     </footer>
+
+    <script src="app.js"></script>
 
 </body>
 
